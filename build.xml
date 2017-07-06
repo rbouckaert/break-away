@@ -226,7 +226,7 @@
 			<fileset file="templates/AutoPartition.xml" />
 		</copy>
 
-		<jar jarfile="${distBREAK_AWAY}/BREAK_AWAY_SPHERE.addon.v${version}.zip">
+		<jar jarfile="${distBREAK_AWAY}/BREAK_AWAY.addon.v${version}.zip">
 			<fileset dir="${Add_on_dir}">
 				<include name="**/*" />
 			</fileset>
