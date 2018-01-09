@@ -239,10 +239,6 @@ public class DistanceBasedDiffusionModel extends GraphSubstitutionModel {
 			int source = origRange[i];
 			for (int j = 0; j < destRange.length; j++) {
 				int target = destRange[j];
-				if (source > 855 || target > 855) {
-					int h = 3;
-					 h++;
-				}
 				logP[k++] = getLogLikelihood(source, target, time);
 			}
 		}

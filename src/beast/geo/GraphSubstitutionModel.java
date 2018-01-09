@@ -3,6 +3,7 @@ package beast.geo;
 import java.util.ArrayList;
 import java.util.List;
 
+import beast.core.Description;
 import beast.core.Input;
 import beast.core.Input.Validate;
 import beast.core.parameter.IntegerParameter;
@@ -12,6 +13,7 @@ import beast.evolution.substitutionmodel.SubstitutionModel.Base;
 import beast.evolution.tree.Node;
 import beast.geo.operators.StateDistanceProvider;
 
+@Description("Provides distance between two nodes based on their minimum distance in a graph")
 abstract public class GraphSubstitutionModel extends Base implements StateDistanceProvider {
 	public Input<IntegerParameter> locationInput = new Input<IntegerParameter>("location", "location, one for each node in the tree, representing the node number in the graph", Validate.REQUIRED);
 	public Input<Graph> graphInput = new Input<Graph>("graph", "the graph specifying rates among nodes", Validate.REQUIRED);

@@ -1,5 +1,7 @@
 package beast.geo;
 
+import beast.core.Citation;
+import beast.core.Description;
 import beast.core.Input;
 import beast.core.Input.Validate;
 import beast.evolution.branchratemodel.BranchRateModel;
@@ -7,6 +9,10 @@ import beast.evolution.likelihood.GenericTreeLikelihood;
 import beast.evolution.tree.Node;
 import beast.evolution.tree.Tree;
 
+@Description("Treelikelihood that provides positions and calculates likelihood based on a graph based substitution model")
+@Citation(value="Remco R. Bouckaert, Claire Bowern, Quentin D. Atkinson. "
+		+ "The origin and expansion of Pama-Nyungan languages across Australia. "
+		+ "Nature Ecology and Evolution (accepted)", year=2017)
 public class SampledTraitLikelihood extends GenericTreeLikelihood implements PositionProvider {
 	public Input<GraphSubstitutionModel> modelInput = new Input<GraphSubstitutionModel>("model" , "model for the diffusion of the trait",Validate.REQUIRED);
 

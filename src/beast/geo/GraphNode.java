@@ -2,7 +2,6 @@ package beast.geo;
 
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import sphericalGeo.GreatCircleDistance;
@@ -100,10 +99,10 @@ abstract public class GraphNode {
 	}
 
 	public void scaleDistance(double scale, int i) {
-		if (i >= distance.length) {
-			int h = 3;
-			h++;
-		}
+//		if (i >= distance.length) {
+//			int h = 3;
+//			h++;
+//		}
 		distance[i] *= scale;
 	}
 	

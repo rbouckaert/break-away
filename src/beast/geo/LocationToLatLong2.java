@@ -6,7 +6,6 @@ import beast.core.Input;
 import beast.core.Input.Validate;
 import beast.core.parameter.IntegerParameter;
 import beast.core.parameter.RealParameter;
-import beast.evolution.likelihood.GenericTreeLikelihood;
 
 @Description("For letting TreeWithMetaDataLogger know about lat/longs of nodes in trees")
 public class LocationToLatLong2 extends RealParameter {

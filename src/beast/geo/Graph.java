@@ -293,7 +293,7 @@ public class Graph extends BEASTObject {
 
 		
 		while (queue1.size() > 0) {
-			DistantGNode ct1 = queue1.peek();
+			//DistantGNode ct1 = queue1.peek();
 			
 			int connection = doStep(queue1, dist1, prev1, done1, targetID);
 			if (connection >= 0) {

@@ -2,6 +2,7 @@ package beast.geo;
 
 
 
+import beast.core.Description;
 import beast.core.Input;
 import beast.core.Operator;
 import beast.core.parameter.IntegerParameter;
@@ -10,6 +11,7 @@ import beast.evolution.tree.Tree;
 import beast.util.Randomizer;
 import beast.core.Input.Validate;
 
+@Description("Changes assigment of locations of nodes affected by a tree operator")
 public class IslandHopeMetaOperator extends Operator {
 
 	public Input<Operator> operatorInput = new Input<>("operator", "operator that changes the topology of a tree", Validate.REQUIRED);
