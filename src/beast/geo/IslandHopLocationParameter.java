@@ -56,7 +56,10 @@ public class IslandHopLocationParameter extends IntegerParameter {
 			int loc = location.getValue(node.getNr());
 			values[node.getNr()] = values[loc];
 			if (loc != node.getLeft().getNr() && loc != node.getRight().getNr()) {
-				throw new IllegalArgumentException("Uh oh -- location should be left or right node, but is none of them");
+				throw new IllegalArgumentException("Uh oh -- location should be left or right node, but is none of them: "
+						+ loc +"!="+ node.getLeft().getNr() +" && "+ loc + "!="+ node.getRight().getNr() + "\n"
+						+ "Check that there are no operators that change the tree topology, or if there are such operators, "
+						+ "check that they are wrapped inside a IslandHopeMetaOperator.");
 			}
 		}
 		

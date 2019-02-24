@@ -12,7 +12,7 @@ import beast.evolution.tree.Tree;
 @Description("Treelikelihood that provides positions and calculates likelihood based on a graph based substitution model")
 @Citation(value="Remco R. Bouckaert, Claire Bowern, Quentin D. Atkinson. "
 		+ "The origin and expansion of Pama-Nyungan languages across Australia. "
-		+ "Nature Ecology and Evolution (accepted)", year=2017)
+		+ "Nature Ecology and Evolution, 2, 741–749 (2018)", year=2018, DOI="doi:10.1038/s41559-018-0489-3")
 public class SampledTraitLikelihood extends GenericTreeLikelihood implements PositionProvider {
 	public Input<GraphSubstitutionModel> modelInput = new Input<GraphSubstitutionModel>("model" , "model for the diffusion of the trait",Validate.REQUIRED);
 
