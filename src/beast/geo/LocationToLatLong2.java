@@ -23,6 +23,8 @@ public class LocationToLatLong2 extends RealParameter {
 	PositionProvider likelihood;
 	int dim = 2;
 	
+	
+	
 	@Override
 	public void initAndValidate() {
 		super.initAndValidate();
@@ -70,6 +72,11 @@ public class LocationToLatLong2 extends RealParameter {
 			}
 			return c[1];
 		}
+	}
+
+	@Override
+	public int getMinorDimension2() {
+		return super.getDimension();
 	}
 
 }
