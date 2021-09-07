@@ -1,5 +1,6 @@
 package beast.geo;
 
+import beast.core.Description;
 import beast.core.Operator;
 import beast.core.Param;
 import beast.core.parameter.IntegerParameter;
@@ -7,6 +8,7 @@ import beast.evolution.tree.Node;
 import beast.evolution.tree.Tree;
 import beast.util.Randomizer;
 
+@Description("Operator that moves location parameter for break-away phylogeography")
 public class IslandHopOperator extends Operator {
 	
 	Tree tree;
