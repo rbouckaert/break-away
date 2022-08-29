@@ -1,8 +1,8 @@
-package beast.geo;
+package breakaway.geo;
 
 import java.io.Serializable;
 
-import beast.core.Description;
+import beast.base.core.Description;
 
 
 @Description("serialisable wrapper around a distance matrix")

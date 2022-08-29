@@ -1,5 +1,18 @@
-<addon name="BREAK_AWAY" version='1.0.1'>
-	<depends on='beast2' atleast='2.6.3'/>
-	<depends on='BEASTLabs' atleast='1.6.0'/>
-	<depends on='GEO_SPHERE' atleast='1.1.1'/>
-</addon>
+<package name="BREAK_AWAY" version="1.2.0">
+    <depends on='BEAST.base' atleast='2.7.0'/>
+    <depends on='BEAST.app' atleast='2.7.0'/>
+	<depends on='BEASTLabs' atleast='2.0.0'/>
+	<depends on='GEO_SPHERE' atleast='1.4.0'/>
+
+    <service type="beast.base.core.BEASTInterface">
+        <provider classname="breakaway.geo.DistanceBasedDiffusionModel"/>
+        <provider classname="breakaway.geo.Graph"/>
+        <provider classname="breakaway.geo.IslandHopeMetaOperator"/>
+        <provider classname="breakaway.geo.IslandHopLocationParameter"/>
+        <provider classname="breakaway.geo.IslandHopOperator"/>
+        <provider classname="breakaway.geo.IslanhopLocationInitialiser"/>
+        <provider classname="breakaway.geo.LocationToLatLong2"/>
+        <provider classname="breakaway.geo.SampledTraitLikelihood"/>
+    </service>
+
+</package>

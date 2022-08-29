@@ -1,17 +1,17 @@
-package beast.geo;
+package breakaway.geo;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import beast.core.Description;
-import beast.core.Input;
-import beast.core.Input.Validate;
-import beast.core.parameter.IntegerParameter;
-import beast.evolution.datatype.DataType;
-import beast.evolution.substitutionmodel.EigenDecomposition;
-import beast.evolution.substitutionmodel.SubstitutionModel.Base;
-import beast.evolution.tree.Node;
-import beast.geo.operators.StateDistanceProvider;
+import beast.base.core.Description;
+import beast.base.core.Input;
+import beast.base.core.Input.Validate;
+import beast.base.inference.parameter.IntegerParameter;
+import breakaway.geo.operators.StateDistanceProvider;
+import beast.base.evolution.datatype.DataType;
+import beast.base.evolution.substitutionmodel.EigenDecomposition;
+import beast.base.evolution.substitutionmodel.SubstitutionModel.Base;
+import beast.base.evolution.tree.Node;
 
 @Description("Provides distance between two nodes based on their minimum distance in a graph")
 abstract public class GraphSubstitutionModel extends Base implements StateDistanceProvider {

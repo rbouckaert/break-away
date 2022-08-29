@@ -1,7 +1,7 @@
-package beast.geo.operators;
+package breakaway.geo.operators;
 
-import beast.core.Description;
-import beast.evolution.tree.Node;
+import beast.base.core.Description;
+import beast.base.evolution.tree.Node;
 
 @Description("Provides distance between two nodes based on their state")
 public interface StateDistanceProvider {

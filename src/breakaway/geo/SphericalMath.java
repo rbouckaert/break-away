@@ -23,12 +23,12 @@
  * Boston, MA  02110-1301  USA
  */
 
-package beast.geo;
+package breakaway.geo;
 
 
 
 
-import beast.core.Description;
+import beast.base.core.Description;
 
 @Description("math on a sphere")
 public class SphericalMath  {

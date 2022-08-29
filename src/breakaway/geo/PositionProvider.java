@@ -1,6 +1,6 @@
-package beast.geo;
+package breakaway.geo;
 
-import beast.core.Description;
+import beast.base.core.Description;
 
 @Description("provides position as node number in a graph, used for logging positions on a tree")
 public interface PositionProvider {

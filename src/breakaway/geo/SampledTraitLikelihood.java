@@ -1,13 +1,13 @@
-package beast.geo;
+package breakaway.geo;
 
-import beast.core.Citation;
-import beast.core.Description;
-import beast.core.Input;
-import beast.core.Input.Validate;
-import beast.evolution.branchratemodel.BranchRateModel;
-import beast.evolution.likelihood.GenericTreeLikelihood;
-import beast.evolution.tree.Node;
-import beast.evolution.tree.Tree;
+import beast.base.core.Citation;
+import beast.base.core.Description;
+import beast.base.core.Input;
+import beast.base.core.Input.Validate;
+import beast.base.evolution.branchratemodel.BranchRateModel;
+import beast.base.evolution.likelihood.GenericTreeLikelihood;
+import beast.base.evolution.tree.Node;
+import beast.base.evolution.tree.Tree;
 
 @Description("Treelikelihood that provides positions and calculates likelihood based on a graph based substitution model")
 @Citation(value="Remco R. Bouckaert, Claire Bowern, Quentin D. Atkinson. "

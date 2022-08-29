@@ -1,15 +1,15 @@
-package beast.geo;
+package breakaway.geo;
 
 
 
-import beast.core.Description;
-import beast.core.Input;
-import beast.core.Operator;
-import beast.core.parameter.IntegerParameter;
-import beast.evolution.tree.Node;
-import beast.evolution.tree.Tree;
-import beast.util.Randomizer;
-import beast.core.Input.Validate;
+import beast.base.core.Description;
+import beast.base.core.Input;
+import beast.base.inference.Operator;
+import beast.base.inference.parameter.IntegerParameter;
+import beast.base.evolution.tree.Node;
+import beast.base.evolution.tree.Tree;
+import beast.base.util.Randomizer;
+import beast.base.core.Input.Validate;
 
 @Description("Changes assigment of locations of nodes affected by a tree operator")
 public class IslandHopeMetaOperator extends Operator {

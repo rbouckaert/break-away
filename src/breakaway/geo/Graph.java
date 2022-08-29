@@ -1,4 +1,4 @@
-package beast.geo;
+package breakaway.geo;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
@@ -16,9 +16,9 @@ import java.util.concurrent.Executors;
 
 import javax.imageio.ImageIO;
 
-import beast.core.BEASTObject;
-import beast.core.Description;
-import beast.core.Input;
+import beast.base.core.BEASTObject;
+import beast.base.core.Description;
+import beast.base.core.Input;
 
 @Description("Graph connecting nodes on the earth's surface")
 public class Graph extends BEASTObject {
@@ -633,7 +633,7 @@ public class Graph extends BEASTObject {
 		for (int i = 0; i < n; i++) {
 			index[i] = i;
 		}
-		beast.util.HeapSort.sort(d, index);
+		beast.base.util.HeapSort.sort(d, index);
 		return index;
 	}
 }
